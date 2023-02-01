@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hanoi Solver</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="controls">
+            <h2>Controls</h2>
+            1 → 2 <input type="text" id="key1" maxlength="1" value="d" onchange="keyChange()"><br>
+            1 → 3 <input type="text" id="key2" maxlength="1" value="f" onchange="keyChange()"><br>
+            2 → 1 <input type="text" id="key3" maxlength="1" value="s" onchange="keyChange()"><br>
+            2 → 3 <input type="text" id="key4" maxlength="1" value="l" onchange="keyChange()"><br>
+            3 → 1 <input type="text" id="key5" maxlength="1" value="j" onchange="keyChange()"><br>
+            3 → 2 <input type="text" id="key6" maxlength="1" value="k" onchange="keyChange()"><br>
+            <button onclick="swap()">Even/odd swap</button>
+        </div>
+        <div id="solution">
+            Number of disks: <input type="number" id="disks" maxlength="2" value="6" onchange="disksChange()"><br>
+            Group size: <input type="number" id="groupSize" maxlength="2" value="3" onchange="groupSizeChange()"><br>
+            <textarea id="sol" cols="45" rows="10" readonly></textarea><br>
+            <button onclick="copy()">Copy</button>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
